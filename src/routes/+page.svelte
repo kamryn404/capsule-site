@@ -147,18 +147,24 @@
     <section id="download" class="cta">
         <h2 class="section-title-serif">Download</h2>
         <div class="cta-buttons">
-            <a href="/download/mac" class="cta-button secondary platform-btn">
+            <a
+                href="https://github.com/kamryn404/Capsule/releases/latest/Capsule.dmg"
+                class="cta-button secondary platform-btn"
+            >
                 <img src="/apple.svg" alt="Mac" class="platform-icon" />
                 Mac
             </a>
             <a
-                href="/download/windows"
+                href="https://github.com/kamryn404/Capsule/releases/latest/Capsule.exe"
                 class="cta-button secondary platform-btn"
             >
                 <img src="/windows.svg" alt="Windows" class="platform-icon" />
                 Windows
             </a>
-            <a href="/download/linux" class="cta-button secondary platform-btn">
+            <a
+                href="https://github.com/kamryn404/Capsule/releases/latest/Capsule.AppImage"
+                class="cta-button secondary platform-btn"
+            >
                 <img src="/linux.svg" alt="Linux" class="platform-icon" />
                 Linux
             </a>
