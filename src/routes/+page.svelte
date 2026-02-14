@@ -33,7 +33,7 @@
         {
             title: "Cross-Platform",
             description:
-                "Available on Windows, macOS, Linux, Android, and iOS. Consistent experience across all platforms.",
+                "Available on Windows, macOS, Linux (Android coming soon). Consistent experience across all platforms.",
             icon: "⚡",
         },
     ];
