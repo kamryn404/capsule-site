@@ -172,6 +172,12 @@
     </section>
 
     <footer class="footer">
+        <a href="https://www.buymeacoffee.com/kamryn404" target="_blank">
+            <p style="background: white; padding: 10px; border-radius: 10px">
+                <img src="bmc-brand-logo.svg" alt="" />
+            </p>
+        </a>
+
         <p>&copy; 2026 Capsule</p>
     </footer>
 </div>
@@ -423,6 +429,10 @@
         padding: 80px 40px;
         color: #444;
         font-size: 0.8rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
     }
 
     @media (max-width: 900px) {
