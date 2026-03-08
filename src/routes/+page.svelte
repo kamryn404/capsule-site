@@ -164,6 +164,7 @@
             >
                 <img src="/apple.svg" alt="Mac" class="platform-icon" />
                 Mac
+                <p class="small">Apple Silicon</p>
             </a>
             <a
                 href="https://github.com/kamryn404/Capsule/releases/latest/download/Capsule.exe"
@@ -171,6 +172,7 @@
             >
                 <img src="/windows.svg" alt="Windows" class="platform-icon" />
                 Windows
+                <p class="small">x64</p>
             </a>
             <a
                 href="https://github.com/kamryn404/Capsule/releases/latest/download/Capsule.AppImage"
@@ -178,6 +180,7 @@
             >
                 <img src="/linux.svg" alt="Linux" class="platform-icon" />
                 Linux
+                <p class="small">x64</p>
             </a>
         </div>
     </section>
@@ -452,6 +455,13 @@
         font-weight: 600;
         text-decoration: none;
         transition: all 0.2s ease;
+    }
+
+    .cta-button .small {
+        font-family: sans-serif;
+        margin-top: -16px;
+        font-size: 0.8em;
+        color: rgba(255, 255, 255, 0.2);
     }
 
     .cta-button.secondary {
