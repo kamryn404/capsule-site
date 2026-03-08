@@ -182,6 +182,14 @@
                 Linux
                 <p class="small">x64</p>
             </a>
+            <a
+                href="https://github.com/kamryn404/Capsule/releases/latest/download/Capsule.apk"
+                class="cta-button secondary platform-btn"
+            >
+                <img src="/android.svg" alt="Android" class="platform-icon" />
+                Android
+                <p class="small">APK</p>
+            </a>
         </div>
     </section>
 
