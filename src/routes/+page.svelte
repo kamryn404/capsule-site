@@ -71,7 +71,7 @@
         </h1>
 
         <p class="hero-subtitle">
-            A cross-platform application for compressing and optimizing media
+            A cross-platform application for capturing and compressing media
             files.<br />
             Preview output quality in real time.
         </p>
@@ -129,6 +129,13 @@
         <h2 class="section-title-serif">Perfect For</h2>
         <div class="use-cases-grid">
             <div class="use-case-item">
+                <h4>Digital Journalers</h4>
+                <p>
+                    Add more images to your journal without bloating your
+                    vault's file size.
+                </p>
+            </div>
+            <div class="use-case-item">
                 <h4>Content Creators</h4>
                 <p>
                     Compress media for web and social media sharing without
@@ -142,10 +149,6 @@
             <div class="use-case-item">
                 <h4>Photographers</h4>
                 <p>Batch process image collections efficiently.</p>
-            </div>
-            <div class="use-case-item">
-                <h4>Video Editors</h4>
-                <p>Create proxy files for editing workflows.</p>
             </div>
             <div class="use-case-item">
                 <h4>General Users</h4>
