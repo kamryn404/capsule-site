@@ -45,6 +45,17 @@
         { title: "New Opus audio encoder", date: "APR 10, 2024" },
         { title: "MacOS and Windows stable release", date: "APR 9, 2024" },
     ];
+
+    let copied = false;
+    const fullSolanaAddress = "Bk2w4gY4CajxyzB57UQdGo16tC4tnm5D7UENreHkqbzJ";
+
+    function copySolanaAddress() {
+        navigator.clipboard.writeText(fullSolanaAddress);
+        copied = true;
+        setTimeout(() => {
+            copied = false;
+        }, 2000);
+    }
 </script>
 
 <svelte:head>
@@ -62,7 +73,7 @@
         <p class="hero-subtitle">
             A cross-platform application for compressing and optimizing media
             files.<br />
-            Process images, videos, and audio with hardware acceleration.
+            Preview output quality in real time.
         </p>
 
         <div class="hero-visual">
@@ -172,11 +183,57 @@
     </section>
 
     <footer class="footer">
-        <a href="https://www.buymeacoffee.com/kamryn404" target="_blank">
-            <p style="background: white; padding: 10px; border-radius: 10px">
-                <img src="bmc-brand-logo.svg" alt="" />
-            </p>
-        </a>
+        <h2 style="margin: 0px; font-family:var(--font-heading);">
+            Support the project:
+        </h2>
+        <div class="support-links">
+            <a
+                href="https://www.buymeacoffee.com/kamryn404"
+                target="_blank"
+                class="bmc-link"
+            >
+                <div class="bmc-container">
+                    <img src="bmc-brand-logo.svg" alt="Buy Me a Coffee" />
+                </div>
+            </a>
+
+            <button
+                class="solana-donation"
+                on:click={copySolanaAddress}
+                aria-label="Copy Solana Address"
+            >
+                <div class="solana-logo">
+                    <img
+                        src="/solana.svg"
+                        alt="Solana"
+                        width="24"
+                        height="24"
+                    />
+                </div>
+                <div class="wallet-address-container">
+                    <span class="wallet-address"
+                        >{copied ? "Copied!" : fullSolanaAddress}</span
+                    >
+                    <svg
+                        class="copy-icon"
+                        width="18"
+                        height="18"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                    >
+                        <rect x="9" y="9" width="13" height="13" rx="2" ry="2"
+                        ></rect>
+                        <path
+                            d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"
+                        ></path>
+                    </svg>
+                </div>
+            </button>
+        </div>
 
         <p>&copy; 2026 Capsule</p>
     </footer>
@@ -216,9 +273,8 @@
         font-size: clamp(1.1rem, 2vw, 1.25rem);
         color: var(--text-secondary);
         line-height: 1.5;
-        margin-bottom: 64px;
+        margin-bottom: 32px;
     }
-
     .hero-visual {
         width: 100%;
         max-width: 1000px;
@@ -433,6 +489,97 @@
         flex-direction: column;
         align-items: center;
         gap: 24px;
+    }
+
+    .support-links {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin-bottom: 16px;
+    }
+
+    .bmc-link {
+        display: block;
+        transition: transform 0.2s ease;
+        text-decoration: none;
+    }
+
+    .bmc-container {
+        background: white;
+        padding: 0 16px;
+        border-radius: 12px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 48px;
+        box-sizing: border-box;
+    }
+
+    .bmc-container img {
+        height: 28px;
+        display: block;
+    }
+
+    .solana-donation {
+        display: flex;
+        align-items: center;
+        background: #18181b;
+        padding: 6px 6px 6px 14px;
+        border-radius: 12px;
+        gap: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        cursor: pointer;
+        transition:
+            transform 0.2s ease,
+            background 0.2s ease;
+        font-family: inherit;
+        color: white;
+        height: 48px;
+        box-sizing: border-box;
+    }
+
+    .solana-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wallet-address-container {
+        display: flex;
+        align-items: center;
+        background: #27272a;
+        padding: 0 12px;
+        border-radius: 8px;
+        gap: 10px;
+        height: 36px;
+        border: 1px solid rgba(255, 255, 255, 0.05);
+        transition: background 0.2s ease;
+    }
+
+    .solana-donation:hover .wallet-address-container {
+        background: #3f3f46;
+    }
+
+    .wallet-address {
+        font-family: monospace;
+        font-size: 0.95rem;
+        color: #e4e4e7;
+        letter-spacing: 0.5px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+
+    .copy-icon {
+        color: #a1a1aa;
+        transition: color 0.2s ease;
+    }
+
+    .solana-donation:hover .copy-icon {
+        color: #fff;
     }
 
     @media (max-width: 900px) {
