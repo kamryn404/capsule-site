@@ -59,15 +59,15 @@
 </script>
 
 <svelte:head>
-    <title>Capsule — Compress. Optimize. Share.</title>
+    <title>Capsule — Capture. Compress. Share.</title>
 </svelte:head>
 
 <div class="page-wrapper">
     <!-- Hero Section -->
     <section class="hero">
         <h1 class="hero-title">
-            Compress.<br />
-            Optimize. Share.
+            Capture.<br />
+            Compress. Share.
         </h1>
 
         <p class="hero-subtitle">
