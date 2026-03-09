@@ -129,7 +129,7 @@
         <h2 class="section-title-serif">Perfect For</h2>
         <div class="use-cases-grid">
             <div class="use-case-item">
-                <h4>Digital Journalers</h4>
+                <h4>Digital Archivists</h4>
                 <p>
                     Add more images to your journal without bloating your
                     vault's file size.
